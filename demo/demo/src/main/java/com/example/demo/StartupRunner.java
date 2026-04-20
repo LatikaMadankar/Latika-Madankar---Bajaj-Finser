@@ -19,9 +19,9 @@ public class StartupRunner implements CommandLineRunner {
         String url = "https://bfhldevapigw.healthrx.co.in/hiring/testWebhook/JAVA";
 
         Map<String, String> body = new HashMap<>();
-        body.put("name", "Your Real Name");
-        body.put("regNo", "Your Real RegNo");
-        body.put("email", "Your Real Email");
+        body.put("name", "John Doe");
+        body.put("regNo", "REG12347");
+        body.put("email", "john@example.com");
 
         ResponseEntity<Map> response =
                 restTemplate.postForEntity(url, body, Map.class);
